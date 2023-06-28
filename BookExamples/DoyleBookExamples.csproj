@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31F1C86E-8654-49DF-ADFE-2D22E47117B7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BookExamples</RootNamespace>
+    <AssemblyName>BookExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ch9Pro2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro2.Designer.cs">
+      <DependentUpon>Ch9Pro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro1.Designer.cs">
+      <DependentUpon>Ch9Pro1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro3.Designer.cs">
+      <DependentUpon>Ch9Pro3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro4.Designer.cs">
+      <DependentUpon>Ch9Pro4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro5.Designer.cs">
+      <DependentUpon>Ch9Pro5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro6.Designer.cs">
+      <DependentUpon>Ch9Pro6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro8.Designer.cs">
+      <DependentUpon>Ch9Pro8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch9Pro10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch9Pro10.Designer.cs">
+      <DependentUpon>Ch9Pro10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter.cs" />
+    <Compile Include="Chapter1.cs" />
+    <Compile Include="Chapter10.cs" />
+    <Compile Include="Chapter11.cs" />
+    <Compile Include="Chapter12.cs" />
+    <Compile Include="Chapter13.cs" />
+    <Compile Include="Chapter14.cs" />
+    <Compile Include="Chapter2.cs" />
+    <Compile Include="Chapter3.cs" />
+    <Compile Include="Chapter4.cs" />
+    <Compile Include="Chapter5.cs" />
+    <Compile Include="Chapter6.cs" />
+    <Compile Include="Chapter7.cs" />
+    <Compile Include="Chapter8.cs" />
+    <Compile Include="Chapter9.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ch9Pro1.resx">
+      <DependentUpon>Ch9Pro1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro2.resx">
+      <DependentUpon>Ch9Pro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro3.resx">
+      <DependentUpon>Ch9Pro3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro4.resx">
+      <DependentUpon>Ch9Pro4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro5.resx">
+      <DependentUpon>Ch9Pro5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro6.resx">
+      <DependentUpon>Ch9Pro6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch9Pro8.resx">
+      <DependentUpon>Ch9Pro8.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.exe.config
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.exe
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.pdb
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.csproj.AssemblyReference.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.csproj.CoreCompileInputs.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.exe
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.pdb
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.csproj.SuggestedBindingRedirects.cache

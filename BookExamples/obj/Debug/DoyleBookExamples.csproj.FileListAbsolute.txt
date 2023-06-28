@@ -1,0 +1,16 @@
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.exe.config
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.exe
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\bin\Debug\BookExamples.pdb
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\DoyleBookExamples.csproj.AssemblyReference.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\DoyleBookExamples.csproj.SuggestedBindingRedirects.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\DoyleBookExamples.csproj.CoreCompileInputs.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.exe
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.pdb
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro1.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\DoyleBookExamples.csproj.GenerateResource.cache
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro2.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro3.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro4.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro5.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro6.resources
+C:\Users\ciluk\source\repos\BookExamples\BookExamples\obj\Debug\BookExamples.Ch9Pro8.resources
