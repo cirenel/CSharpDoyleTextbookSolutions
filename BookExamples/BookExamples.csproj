@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ch10Pro2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch10Pro2.Designer.cs">
+      <DependentUpon>Ch10Pro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch10Pro9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch10Pro9.Designer.cs">
+      <DependentUpon>Ch10Pro9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ch9Pro2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ch10Pro2.resx">
+      <DependentUpon>Ch10Pro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch10Pro9.resx">
+      <DependentUpon>Ch10Pro9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ch9Pro1.resx">
       <DependentUpon>Ch9Pro1.cs</DependentUpon>
     </EmbeddedResource>

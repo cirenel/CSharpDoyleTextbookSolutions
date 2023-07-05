@@ -9,18 +9,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 
 namespace BookExamples
 {
-    //CHAPTER 9 NOTES
-    // chapter 9 is all about 
+    //CHAPTER 10 NOTES
+    // chapter 10 is all about 
     // Topics of focus:
-    //  - arrays
-    //  - foreach loops
+    //  - 
     // not in text but reccomended: 
     //  - 
 
-    //Chapter 9 is covered in IT151, and IT152
+    //Chapter 10 is covered in IT151, and IT152
 
     class Chapter10 : Chapter
     {
@@ -37,7 +38,9 @@ namespace BookExamples
 
         public override void Problem2()
         {
-            throw new NotImplementedException();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Ch10Pro2());
         }
 
         public override void Problem3()
@@ -76,8 +79,9 @@ namespace BookExamples
 
         public override void Problem9()
         {
-            throw new NotImplementedException();
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Ch10Pro9());
         }
 
         public override void Problem10()

@@ -81,7 +81,7 @@ namespace BookExamples
                 } catch (NotImplementedException e)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"********** Problem {problem} not impelmented **********");
+                    Console.WriteLine($"******************************\n**** {chapter}.{problem} not impelmented ****\n******************************");
                 }
 
                 //pause for user to see output

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BookExamples
 {
@@ -76,8 +77,9 @@ namespace BookExamples
 
         public override void Problem9()
         {
-            throw new NotImplementedException();
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Ch10Pro9());
         }
 
         public override void Problem10()
