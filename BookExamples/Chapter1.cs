@@ -65,6 +65,7 @@ namespace BookExamples
             Console.WriteLine("What is the assignment? ");
             string assignment = Console.ReadLine();
 
+            //build final string based on these inputs and using string interpolation and formatting 
             string combined = $"********************************************\n" +
                               $"** Name: {name, -32} **\n" +
                               $"** Date: {date, -32} **\n" +
@@ -76,6 +77,7 @@ namespace BookExamples
 
         public override void Problem3()
         {
+            //printing the required shape using individual writelines 
             Console.WriteLine("##                                   ##");
             Console.WriteLine("  ##                               ##");
             Console.WriteLine("    ##                           ##"); 
@@ -100,6 +102,7 @@ namespace BookExamples
 
         public override void Problem4()
         {
+            //printing the required shape by creating a single string 
             string output = $" CCCCCCCCC             ##      ##\n" +
                             $" CCCCCCCCC             ##      ##\n" +
                             $" CC                 ################\n" +
@@ -108,6 +111,7 @@ namespace BookExamples
                             $" CC                 ################\n" +
                             $" CCCCCCCCC             ##      ##\n" +
                             $" CCCCCCCCC             ##      ##\n" ;
+            //then printing out the string in a single writeline 
             Console.WriteLine(output);
         }
 
@@ -116,7 +120,7 @@ namespace BookExamples
             //set console colors as described in the text 
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
-
+            //printing the required shape by creating a single string 
             string american = "_____________________________________________________________________\n" +
                               "* * * * * * * * * *  ________________________________________________\n" +
                               " * * * * * * * * * * ________________________________________________\n" +
@@ -131,7 +135,7 @@ namespace BookExamples
                               "_____________________________________________________________________\n" +
                               "_____________________________________________________________________\n" +
                               "_____________________________________________________________________\n";
-
+            //then printing out the string in a single writeline 
             Console.WriteLine(american);
 
             
@@ -139,29 +143,36 @@ namespace BookExamples
 
         public override void Problem6()
         {
+            //creating a series of strings using the litnary against fear from dune 
+            //these strings will be our sayings in the code 
             string s1 = "I must not fear.";
             string s2 = "Fear is the mind - killer.";
             string s3 = "Fear is the little - death that brings total obliteration.";
             string s4 = "I will face my fear.";
 
+            //output one is all write
             Console.WriteLine("\nOutput #1 : ");
             Console.Write(s1);
             Console.Write(s2);
             Console.Write(s3);
             Console.Write(s4);
 
+            //outut2 is a single writeline where the strings are concatenated togetehr 
             Console.WriteLine("\nOutput #2 : ");
             Console.WriteLine(s1 + " " + s2 + " " + s3 + " " + s4);
 
+            //output 3 using only writelines 
             Console.WriteLine("\nOutput #3 : ");
             Console.WriteLine(s1);
             Console.WriteLine(s2);
             Console.WriteLine(s3);
             Console.WriteLine(s4);
 
+            //output 4  uses a single writeline where the strigns are concatenated together using newline escape characters 
             Console.WriteLine("\nOutput #4 : ");
             Console.WriteLine(s1 + "\n" + s2 + "\n" + s3 + "\n" + s4);
 
+            //output 5 uses string interpolation to achive the sae as output 4
             Console.WriteLine("\nOutput #5 : ");
             Console.WriteLine($"{s1}\n{s2}\n{s3}\n{s4}");
 
@@ -175,6 +186,7 @@ namespace BookExamples
 
         public override void Problem8()
         {
+            //we create a dude using string concatenation and the newline escape character 
             string dude = "   0   \n" +
                           "  /M\\  \n" +
                           "   H   \n" +
@@ -188,6 +200,7 @@ namespace BookExamples
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
 
+            //we create a single string holding the three shapes and the newline escape characters 
             string shapes = "      **********              *                     *          \n" +
                             "      **********             ***                   ***         \n" +
                             "      **********            *****                 *****        \n" +

@@ -14,6 +14,7 @@ namespace BookExamples
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
 
+            
             do
             {
                 Console.Title = $"Textbook Examples: C# Text by Barbra Doyle";

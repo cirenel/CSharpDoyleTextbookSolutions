@@ -57,7 +57,21 @@ namespace BookExamples
 
         private void displayOrder_Click(object sender, EventArgs e)
         {
-
+            string allOrder = "";
+            foreach(object o in colorCombo.Items)
+            {
+                string color = o.ToString();
+                allOrder += $"{color}\n";
+                foreach(object oo in sizeCombo.Items)
+                {
+                    string size = oo.ToString();
+                    string k = size+" "+color;
+                    int amt = 0;
+                    numShirts.TryGetValue(k, out amt);
+                    allOrder += $"\t{size} : {amt}\n";
+                }
+            }
+            MessageBox.Show(allOrder, "Order Information");
         }
     }
 }
