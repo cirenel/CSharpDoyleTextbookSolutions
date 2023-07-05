@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookExamples", "BookExamples\BookExamples.csproj", "{31F1C86E-8654-49DF-ADFE-2D22E47117B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FD3C00C-0BB2-4052-8EE2-4F35718950F4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

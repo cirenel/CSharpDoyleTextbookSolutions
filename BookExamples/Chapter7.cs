@@ -15,7 +15,11 @@ namespace BookExamples
     //CHAPTER 7 NOTES
     // chapter 7 is all about 
     // Topics of focus:
-    //  - 
+    //  - array creation options
+    //  - array access
+    //  - array indexing 
+    //  - the introduction of the foreach loop 
+    //  -
     // not in text but reccomended: 
     //  - 
     
@@ -88,25 +92,30 @@ namespace BookExamples
         public override void Problem4()
         {
             //doing this without user input 
-            Random r = new Random();
-            int[] stats = new int[11];
+            Random r = new Random(); //create randomizer object 
+            int[] stats = new int[11]; //create an array indexed 0 to 10
 
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 200; i++) //repeat 200 times 
             {
-                stats[r.Next(0, 11)]++;
+                stats[r.Next(0, 11)]++; 
+                //roll a random number from 0 to 10.
+                //access that array element.
+                //increase it by 1
             }
 
+            //print headers --> interpolation, spacing, and formatting keep alignment 
             Console.WriteLine($"{"Num",5}:{"Occurances",40}:{"Count",7}");
-            for (int j = 0; j < stats.Length; j++)
-            {
-                string str = "";
 
-                for(int k = 0; k < stats[j]; k++)
+            for (int j = 0; j < stats.Length; j++) //this loop will visit every index in the stats array 
+            {
+                string str = ""; //create a string 
+
+                for(int k = 0; k < stats[j]; k++) //for each instance we have seen, 
                 {
-                    str += "#";
+                    str += "#"; //add a symbol to the string 
                 }
 
-                Console.WriteLine($"{j,5}:{str,40}:{stats[j],7}");
+                Console.WriteLine($"{j,5}:{str,40}:{stats[j],7}"); //place string for this index on console using interpolation, spacing, and formatting to keep alignment 
             }
         }
         public override void Problem5()
@@ -116,28 +125,40 @@ namespace BookExamples
 
         public override void Problem6()
         {
+            //create string to hold strings with day names 
             string[] days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+            //create empty double arrays to hold high and low temps 
             double[] hi = new double[7];
             double[] lo = new double[7];
+
+            //create avg hi and avg lo vars to fill later 
             double avgHi = 0;
             double avgLo = 0; 
 
+            //for 7 days 
             for(int i = 0; i < days.Length; i++)
             {
+                //prompt for high temp and save to array at day index 
                 hi[i] = GetDouble($"Please give me {days[i]}'s hi temp.");
+                //prompt for low temp and save to array at day index 
                 lo[i] = GetDouble($"Please give me {days[i]}'s lo temp.");
 
+                //increase avghi and avglo
                 avgHi += hi[i];
                 avgLo += lo[i];
             }
+            //divide avg values by 7 
             avgHi /= 7;
             avgLo /= 7;
 
+            //print col headers using string interpolation and spacing 
             Console.WriteLine($"{"Day",5} : {"Hi",6} : {"Lo",6}");
             for(int j = 0; j < days.Length; j++)
             {
+                //print temp values using string interpolation, formatting, and spacing 
                 Console.WriteLine($"{days[j],5} : {hi[j],6:f2}° : {lo[j],6:f2}°");
             }
+            //print avg hi and avg lo for string interpolation, formatting, and spacing  
             Console.WriteLine($"{"Avg",5} : {avgHi,6:f2}° : {avgLo,6:f2}°");
         }
 
