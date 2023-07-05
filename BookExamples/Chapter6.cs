@@ -235,41 +235,46 @@ namespace BookExamples
             Console.WriteLine("Let's make some triangles!\nEnter the 3 sides of a triangle. The code will repeat until you type EXIT");
 
             
-            string input= ""; 
+            string input= ""; //initilize input string 
             
-            while (input != "EXIT")
+            while (input != "EXIT") //while user does not request input termination 
             {
-                double side1 = -1, side2 = -1, side3 = -1;
-                bool parsed;
-                int numSides = 0;
+                double side1 = -1, side2 = -1, side3 = -1; //create and initilize variables for the 3 sides 
+                bool parsed; //create boolean for parsed check 
+                int numSides = 0; //initilize then umber of sides read in counter 
                 do
                 {
-                    Console.Write($"What is the length of side {numSides + 1}? ");
-                    input = Console.ReadLine();
+                    Console.Write($"What is the length of side {numSides + 1}? "); //prompt user for length of side. use string interpolation to 
+                    input = Console.ReadLine(); //read in input and store 
 
-                    if (numSides == 0)
+                    if (numSides == 0) //is this the first side read in?
                     {
-                        parsed = double.TryParse(input, out side1);
+                        parsed = double.TryParse(input, out side1); //if so, try to parse to side1 var 
                     }
-                    else if (numSides == 1)
+                    else if (numSides == 1) //otherwise is this the second side read in? 
                     {
-                        parsed = double.TryParse(input, out side2);
+                        parsed = double.TryParse(input, out side2); //if so, try to parse to side2 var
                     }
-                    else if (numSides == 2)
+                    else if (numSides == 2) //otherwise is this the third side read in? 
                     {
-                        parsed = double.TryParse(input, out side3);
+                        parsed = double.TryParse(input, out side3); //if so, try to parse to side3 var
                     }
-                    else
+                    else //otherwise there is an issue --> fail the parse and retry from the loop condition 
                     {
                         parsed = false;
                         continue;
                     }
-                    if (parsed)
+                    if (parsed) //was the parse sucessful? 
                     {
-                        numSides++;
+                        numSides++; //increase the number of sides we have seen 
                     }
-                } while (numSides < 3 || !parsed && input != "EXIT");
+                } while (numSides < 3 || !parsed && input != "EXIT"); //repeat the loop while parses are not sucessful, the user does not request exit, and the number of sides entered is less than 3
 
+                //for a triangle to be valid, these three conditions must be true:
+                // - side 1 + side 2 > side 3
+                // - side 2 + side 3 > side 1
+                // - side 3 + side 1 > side 2
+                //we check this using an if-else statement pair and print the appropriate message using string interpolation 
                 if (side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side2)
                 {
                     Console.WriteLine($"{side1}, {side2}, and {side3} can make a triangle.");
@@ -278,6 +283,8 @@ namespace BookExamples
                 {
                     Console.WriteLine("These cannot make a triangle. ");
                 }
+
+                //prompt user to input another triangle or end the program 
                 Console.Write("Another triangle or EXIT? ---> ");
                 input = Console.ReadLine();
             }
@@ -285,33 +292,35 @@ namespace BookExamples
 
         public override void Problem9()
         {
+
             Console.Write("Give me a single symbol to print: ");
-            char single = Console.ReadLine()[0];
+            char single = Console.ReadLine()[0]; //access of a string's first character by treating the string as a character array --> see ch 7
             int rep = 0;
             bool parsed; 
             do
             {
-                Console.Write("give me a number between 1 and 20. ");
-                parsed = int.TryParse(Console.ReadLine(), out rep);
-            } while (!parsed || (rep <=0 || rep>20));
+                Console.Write("give me a number between 1 and 20. "); //ask user for input 
+                parsed = int.TryParse(Console.ReadLine(), out rep); //try to parse input into rep var
+            } while (!parsed || (rep <=0 || rep>20)); //is rep in range and was it parsed? 
 
-            Console.WriteLine();
+            Console.WriteLine(); //writeline for pretting up console output 
 
-            for(int i = 0; i < rep; i++)
+            for(int i = 0; i < rep; i++) //loop counting up
             {
-                for(int j = 0; j <= i; j++)
+                for(int j = 0; j <= i; j++) //loop counting up
                 {
-                    Console.Write(single);
+                    Console.Write(single); //place character on console 
                 }
-                Console.WriteLine();
+                Console.WriteLine(); //at end of row, progress to next row
             }
-            for (int i = rep; i>=0; i--)
+            //halfway through printing 
+            for (int i = rep; i>=0; i--) //loop counting down 
             {
-                for (int j = 0; j <= i; j++)
+                for (int j = 0; j <= i; j++) //loop counting up 
                 {
-                    Console.Write(single);
+                    Console.Write(single);//place character on console 
                 }
-                Console.WriteLine();
+                Console.WriteLine();//at end of row, progress to next row
             }
 
         }
