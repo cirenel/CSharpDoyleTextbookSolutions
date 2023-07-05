@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 //CHAPTER 4 NOTES
 // chapter 4 is all about classes. 
 // Topics of focus:
+//  - creation of objects
+//  - specificaiton of classes
+//  - instance methods v. static methods
 //  - 
 // not in text but reccomended: 
 //  - 
