@@ -1,6 +1,7 @@
-# CSharpTextbookSolutions
-textbook solutions for Barbra Doyle C# text. for use with IT150, IT151, and IT152
-produced for ITI
+# C# Doyle Textbook Solutions
+textbook solutions for C# Programming: From Problem Analysis to Program Design - 5th ed by Barbara Doyle  
+intended for use with IT150, IT151, and IT152
+produced for ITI - Summer 2023
 
 What is here?
 - These are intended to be a series of example solutions for the instructor of these courses. not for students to follow along and copy verbetium from the file.
