@@ -15,8 +15,9 @@ namespace BookExamples
     //CHAPTER 8 NOTES
     // chapter 8 is all about 
     // Topics of focus:
-    //  - arrays
-    //  - foreach loops
+    //  - multi dimensional array creation, access, use 
+    //  - collections : 
+    //          - 
     // not in text but reccomended: 
     //  - 
 
@@ -34,9 +35,11 @@ namespace BookExamples
         public override void Problem1()
         {
             
-            int row = GetInt("how many rows? ");
+            //prompt and read in number of rows and cols
+            int row = GetInt("how many rows? "); 
             int col = GetInt("how many cols? ");
 
+            //create 2D array using this information 
             int[,] values = new int[row, col];
 
             //generate 2D array 
@@ -44,7 +47,7 @@ namespace BookExamples
             {
                 for (int j = 0; j < col; j++)
                 {
-                    values[i, j] = r.Next(0, 100);
+                    values[i, j] = r.Next(0, 101); //pull random number 
                 }
             }
 
@@ -52,17 +55,17 @@ namespace BookExamples
             Console.WriteLine("This is the array in 2D: ");
             for (int i = 0; i < row; i++)
             {
-                string v = "";
+                string v = ""; //v is a single row
                 for (int j = 0; j < col; j++)
                 {
-                    v += $"{values[i, j],5}" ;
+                    v += $"{values[i, j],5}" ; //add to this row using string interpolation 
                 }
-                Console.WriteLine(v);
+                Console.WriteLine(v); //at the end of a single row, print the row
             }
             Console.WriteLine();
 
             //convert to 1D
-            int[] flat = new int[row*col];
+            int[] flat = new int[row*col]; //init blank array with enough spaces for all of the 2D values
             int count = 0; 
             for (int i = 0; i < row; i++)
             {
@@ -109,6 +112,7 @@ namespace BookExamples
 
         public override void Problem6()
         {
+            //prompt and read in number of rows and cols
             int row = GetInt("how many rows? ");
             int col = GetInt("how many cols? ");
 
@@ -121,13 +125,14 @@ namespace BookExamples
             {
                 for (int j = 0; j < col; j++)
                 {
-                    values[i, j] = r.Next(-100, 101);
+                    values[i, j] = r.Next(-100, 101); //generate random number and store 
+                    //determin if is new hi
                     if(values[i, j] > hi)
                     {
                         hi = values[i, j]; 
                     }
-
-                    if(values[i, j] < lo)
+                    //determin if is new lo
+                    if (values[i, j] < lo)
                     {
                         lo = values[i, j]; 
                     }
@@ -156,30 +161,43 @@ namespace BookExamples
             //build array 
             for(int t = 0; t < nums.GetLength(0); t++)
             {
-                nums[t,0] = r.Next(0,101);
-                nums[t, 1] = (int)Math.Pow(nums[t, 0], 2);
+                nums[t,0] = r.Next(0,101); //generate number 
+                nums[t, 1] = (int)Math.Pow(nums[t, 0], 2); //raise this number to a power and store 
             }
 
             //build display string 
-            string display = $"{"Number",8} : {"Squared",-8}\n";
+            string display = $"{"Number",8} : {"Squared",-8}\n"; //col headers 
             for(int t = 0; t < nums.GetLength(0); t++)
             {
-                display += $"{nums[t, 0],8} : {nums[t,1],-8}\n";
+                display += $"{nums[t, 0],8} : {nums[t,1],-8}\n"; //add single row 
             }
+            //print to screen 
             Console.Write(display);
 
         }
 
         public override void Problem8()
         {
-            Console.WriteLine("Give me a phrase to convert to pig latin: ");
-            string input = Console.ReadLine();
-            string[] words = input.Split(' ');
+            Console.WriteLine("Give me a phrase to convert to pig latin: "); //prompt for input 
+            string input = Console.ReadLine(); //read input and save as a var 
+
+            //split the input string on the spaces. will result in an array 
+            string[] words = input.Split(' '); 
+            //create output string 
             string output = "";
-            foreach(string word in words)
+            foreach(string word in words) //for each string in the array of strings 
             {
-                output += word.Substring(1)+word[0] + "ay ";
+                if (word.Length > 1)
+                {
+                    output += word.Substring(1) + word[0] + "ay "; //take the second part of the word, add the first character of the word, then the phrase ay to the output string 
+                }
+                else
+                {
+                    output += word+"ay ";
+                }
             }
+
+            //display the output string 
             Console.WriteLine(output);
         }
 

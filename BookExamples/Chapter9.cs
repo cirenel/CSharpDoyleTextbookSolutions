@@ -16,11 +16,13 @@ namespace BookExamples
     //CHAPTER 9 NOTES
     // chapter 9 is all about 
     // Topics of focus:
-    //  - arrays
-    //  - foreach loops
+    //  - introduction to using forms and forms projects 
+    //  - basics of controls, properties, events
     // not in text but reccomended: 
-    //  - 
-     
+    //  - microsoft c# documentation for form creation and use of visual studio 
+
+    //see Ch9Pro1, Ch9Pro2, Ch9Pro3, Ch9Pro4, Ch9Pro5, Ch9Pro6, Ch9Pro8, Ch9Pro10 files for additional comments 
+
     //Chapter 9 is covered in IT151, and IT152
 
     class Chapter9 : Chapter
@@ -35,7 +37,7 @@ namespace BookExamples
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ch9Pro1());
+            Application.Run(new Ch9Pro1()); //this is the secret sauce for kicking off a form from within code 
         }
 
         public override void Problem2()

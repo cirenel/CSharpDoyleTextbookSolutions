@@ -116,8 +116,9 @@ namespace BookExamples
         //override methods 
         public override string ToString()
         {
+            
             string ret =
-                $"{studentID,20} : {lName,10}, {fName,-10} : {gpa,6:f2} : {term,3} : {field,10}";
+                $"{studentID,20} : {lName,10}, {fName,-10} : {gpa,6:f2} : {term,5} : {field,11}";
 
             return ret;
         }

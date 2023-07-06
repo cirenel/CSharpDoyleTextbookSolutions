@@ -108,7 +108,7 @@ namespace BookExamples
             s5.Term = GetInt("What term are you in? ", 1, 8);
 
 
-            string output = $"{"Student ID",20} : {"",9}Name{"",-9} : {"GPA",6} : {"Term",3} : {"Major",10}\n"+
+            string output = $"{"Student ID",20} : {"",9}Name{"",-9} : {"GPA",6} : {"Term",5} : {"Major",11}\n" +
                 $"{s1}\n" + $"{s2}\n" + $"{s3}\n" + $"{s4}\n" + $"{s5}\n";
             Console.WriteLine(output);
         }

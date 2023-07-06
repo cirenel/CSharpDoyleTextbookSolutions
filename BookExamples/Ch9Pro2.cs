@@ -19,18 +19,17 @@ namespace BookExamples
 
         private void colorBtn_Click(object sender, EventArgs e)
         {
-            Random r = new Random();
-            int R = r.Next(0, 256);
-            int G = r.Next(0, 256);
-            int B = r.Next(0, 256);
+            Random r = new Random(); //create randomizer 
+            int R = r.Next(0, 256) ; //generate a red value 
+            int G = r.Next(0, 256) ; //generate a green value 
+            int B = r.Next(0, 256) ; //generate a blue value 
 
-            this.BackColor = Color.FromArgb(R, G, B);
-
+            this.BackColor = Color.FromArgb(R, G, B); //take those three values, create a color, then set it 
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            this.BackColor = SystemColors.Window;
+            this.BackColor = SystemColors.Window; //reset the background color of the form to the system color 
         }
     }
 }

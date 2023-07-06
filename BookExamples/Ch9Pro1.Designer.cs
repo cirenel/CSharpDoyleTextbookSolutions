@@ -42,7 +42,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Do The Thing";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click); //this line is what connects the button click event to the button method 
             // 
             // label1
             // 
@@ -72,7 +72,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Ch9Pro1";
             this.Text = "Ch9Pro1";
-            this.Load += new System.EventHandler(this.Ch9Pro1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
