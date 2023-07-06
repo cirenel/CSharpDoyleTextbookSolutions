@@ -21,9 +21,11 @@ namespace BookExamples
     //  - file reading
     //  - stream writing and reading
     //  - append v. overwrite 
+    //  - importance of flush 
+    //  - relative v. absolute file paths 
 
     // not in text but reccomended: 
-    //  - seralization and deseralization via JSON
+    //  - seralization and deseralization via JSON [see https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-8-0 ]
 
     //Chapter 13 is covered in IT151, and IT152
 
