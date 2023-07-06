@@ -86,12 +86,7 @@ namespace BookExamples
             this.hardwoodList.Font = new System.Drawing.Font("Courier New", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hardwoodList.FormattingEnabled = true;
             this.hardwoodList.ItemHeight = 32;
-            this.hardwoodList.Items.AddRange(new object[] {
-            $"{"Cherry ".PadRight(40,'.')} {40.50:c2}",
-            $"{"Oak ".PadRight(40,'.')} {20.45:c2}",
-            $"{"Pine ".PadRight(40,'.')} {15.40:c2}",
-            $"{"Maple ".PadRight(40,'.')} {40.32:c2}",
-            $"{"Walnut ".PadRight(40,'.')} {34.95:c2}"});
+            
             this.hardwoodList.Location = new System.Drawing.Point(13, 59);
             this.hardwoodList.Name = "hardwoodList";
             this.hardwoodList.Size = new System.Drawing.Size(798, 420);
@@ -113,12 +108,7 @@ namespace BookExamples
             this.carpetList.Font = new System.Drawing.Font("Courier New", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carpetList.FormattingEnabled = true;
             this.carpetList.ItemHeight = 32;
-            this.carpetList.Items.AddRange(new object[] {
-            $"{"Berber ".PadRight(40,'.')} {80.50:c2}",
-            $"{"Wool ".PadRight(40,'.')} {63.45:c2}",
-            $"{"Skating Rink ".PadRight(40,'.')} {15.40:c2}",
-            $"{"Nylon ".PadRight(40,'.')} {17.32:c2}",
-            $"{"Polyester ".PadRight(40,'.')} {21.95:c2}"});
+
             this.carpetList.Location = new System.Drawing.Point(13, 59);
             this.carpetList.Name = "carpetList";
             this.carpetList.Size = new System.Drawing.Size(798, 420);
@@ -143,11 +133,7 @@ namespace BookExamples
 
             this.laminateList.Location = new System.Drawing.Point(13, 59);
             this.laminateList.Name = "laminateList";
-            this.laminateList.Items.AddRange(new object[] {
-            $"{"Imitation Marble ".PadRight(40,'.')} {29.50:c2}",
-            $"{"Imitation Stone ".PadRight(40,'.')} {12.25:c2}",
-            $"{"Imitation Wood ".PadRight(40,'.')} {15.40:c2}",
-            $"{"Classic Brick ".PadRight(40,'.')} {20.32:c2}"});
+
             this.laminateList.Size = new System.Drawing.Size(798, 420);
             this.laminateList.TabIndex = 1;
             // 
@@ -168,11 +154,7 @@ namespace BookExamples
             this.tileList.ItemHeight = 32;
             this.tileList.Location = new System.Drawing.Point(13, 59);
             this.tileList.Name = "tileList";
-            this.tileList.Items.AddRange(new object[] {
-            $"{"Marble ".PadRight(40,'.')} {50.50:c2}",
-            $"{"Granite ".PadRight(40,'.')} {30.45:c2}",
-            $"{"Ceramic ".PadRight(40,'.')} {25.40:c2}",
-            $"{"Imitation Brick ".PadRight(40,'.')} {14.32:c2}"});
+            
             this.tileList.Size = new System.Drawing.Size(798, 420);
             this.tileList.TabIndex = 1;
             // 

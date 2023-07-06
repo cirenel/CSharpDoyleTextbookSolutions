@@ -18,6 +18,7 @@ namespace BookExamples
     // Topics of focus:
     //  - introduction to using forms and forms projects 
     //  - basics of controls, properties, events
+    //  - sensible naming conventions for on forms controls 
     // not in text but reccomended: 
     //  - microsoft c# documentation for form creation and use of visual studio 
 

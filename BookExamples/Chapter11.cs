@@ -13,11 +13,10 @@ using System.Windows.Forms;
 
 namespace BookExamples
 {
-    //CHAPTER 9 NOTES
-    // chapter 9 is all about 
+    //CHAPTER 11 NOTES
+    // chapter 11 is all about 
     // Topics of focus:
-    //  - arrays
-    //  - foreach loops
+    //  - 
     // not in text but reccomended: 
     //  - 
 

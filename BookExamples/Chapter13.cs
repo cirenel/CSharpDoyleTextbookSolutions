@@ -17,9 +17,13 @@ namespace BookExamples
     //CHAPTER 13 NOTES
     // chapter 13 is all about 
     // Topics of focus:
-    //  - 
+    //  - file writing
+    //  - file reading
+    //  - stream writing and reading
+    //  - append v. overwrite 
+
     // not in text but reccomended: 
-    //  - 
+    //  - seralization and deseralization via JSON
 
     //Chapter 13 is covered in IT151, and IT152
 
@@ -31,6 +35,7 @@ namespace BookExamples
             base.RunProblem(num);
         }
 
+        //this is a utility method for when we need to create a file quickly to use 
         private void createLocalFile(string filePath = "file.txt")
         {
             Random r = new Random();
@@ -52,22 +57,28 @@ namespace BookExamples
         public override void Problem2()
         { 
             createLocalFile();
+            //declare and initilize sum, count, min, max, and the string to store individual lines from the file  
             double sum = 0;
             int count = 0;
             double max = double.MinValue;
             double min = double.MaxValue;
             string s = "";
+
+            //create the streamreader 
             using (StreamReader sr = new StreamReader("file.txt"))
             {
-                while ((s = sr.ReadLine()) != null)
+                while ((s = sr.ReadLine()) != null) //while reading in a file does not result in null
                 {
-                    double num = double.Parse(s);
-                    sum += num;
+                    double num = double.Parse(s); //parse the line
+                    sum += num; //add it to the sum
+                    //change min and max if needed 
                     max = Math.Max(num, max);
                     min = Math.Min(num, min);
+                    //increase the count of numbers we have read in 
                     count++;
                 }
             }
+            //using string interpolation, spacing, adn formatting, print the resulting stats to the console 
             Console.WriteLine($"{count} numbers read.\nAvg: {sum / count}\nMin:{min}\nMax:{max}");
         }
 
@@ -80,23 +91,25 @@ namespace BookExamples
 
         public override void Problem4()
         {
-            Random r = new Random();
-            StreamWriter sw = new StreamWriter("Ch13Pr4.txt");
-            for(int i = 0; i < 10; i++)
+            Random r = new Random(); //create randomizer 
+            StreamWriter sw = new StreamWriter("Ch13Pr4.txt"); //create a new streamwriter 
+            for(int i = 0; i < 10; i++) //set up the number of rows 
             {
-                string line = "";
-                for(int j = 0; j < 5; j++)
+                string line = ""; //make a string to be an individual line
+                for(int j = 0; j < 5; j++) //set up number of cols 
                 {
-                    line += $"{r.Next(0,1001),5}";
-                }
-                sw.Write(line + "\n");
-                sw.Flush();
+                    line += $"{r.Next(0,1001),5}"; //generate a random number, space it with interpolation, concatenate to the indivisual line 
+                } //end of col loop 
+                sw.Write(line + "\n"); //place the line in the file stream 
+                sw.Flush(); //flush the stream 
             }
-            
+            //after the col loop completes 
+
+            //display the location of the filestream to the console  
             Console.WriteLine($"Opening file now.\nYou file can be found here:\n{((FileStream)(sw.BaseStream)).Name}");
-
+            //open the file in notepad.exe 
             Process.Start("notepad.exe", ((FileStream)(sw.BaseStream)).Name);
-
+            //close the stream 
             sw.Close();
 
         }

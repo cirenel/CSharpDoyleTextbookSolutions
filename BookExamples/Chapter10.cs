@@ -17,7 +17,8 @@ namespace BookExamples
     //CHAPTER 10 NOTES
     // chapter 10 is all about 
     // Topics of focus:
-    //  - 
+    //  - working with more controls
+    //  - working with more complex events 
     // not in text but reccomended: 
     //  - 
 

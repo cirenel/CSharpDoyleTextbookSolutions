@@ -12,11 +12,10 @@ using System.Threading.Tasks;
 
 namespace BookExamples
 {
-    //CHAPTER 9 NOTES
-    // chapter 9 is all about 
+    //CHAPTER 12 NOTES
+    // chapter 12 is all about 
     // Topics of focus:
-    //  - arrays
-    //  - foreach loops
+    //  - 
     // not in text but reccomended: 
     //  - 
 
