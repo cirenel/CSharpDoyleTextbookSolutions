@@ -64,7 +64,32 @@ namespace BookExamples
             return lastEmployeeID;
         }
         //instance methods
+        public double GetWeeklyPay(double hours = 40)
+        {
+            double takehome; 
+
+            if(classification == Classification.hourly)
+            {
+                if(hours > 40)
+                {
+                    takehome = (40 * payRate) + ((hours - 40) * 1.5 * payRate);
+                } else
+                {
+                    takehome = hours * payRate;
+                }
+            } else
+            {
+                takehome = payRate / 52;
+            }
+
+            return takehome;
+        }
+
 
         //override methods 
+        public override string ToString()
+        {
+            return $"{employeeID,6} : {fName,10}, {lName,-10} : {dept, -10} : {classification.ToString().ToUpper()[0],5} : "; 
+        }
     }
 }

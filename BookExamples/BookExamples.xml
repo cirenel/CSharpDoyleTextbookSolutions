@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookExamples</name>
+    </assembly>
+    <members>
+        <member name="F:BookExamples.Ch10Pro2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch10Pro2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch10Pro2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch10Pro9.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch10Pro9.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch10Pro9.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro4.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro4.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro4.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro5.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro5.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro5.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro6.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro6.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro6.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro8.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro8.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro8.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BookExamples.Ch9Pro10.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BookExamples.Ch9Pro10.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BookExamples.Ch9Pro10.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
