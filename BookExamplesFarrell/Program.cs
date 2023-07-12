@@ -21,7 +21,7 @@ namespace BookExamples
 
                 //choose chapter and problem
                 int chapter = GetInt("Please select the chapter. ", 1, 14);
-                int problem = GetInt("Please select the problem. ", 1, 10);
+                int problem = GetInt("Please select the problem. ", 1, 20);
                 Console.Clear();
 
                 Chapter c = null;
@@ -42,6 +42,21 @@ namespace BookExamples
                         break;
                     case 5:
                         c = new Chapter5();
+                        break;
+                    case 6:
+                        c = new Chapter6();
+                        break;
+                    case 7:
+                        c = new Chapter7();
+                        break;
+                    case 8:
+                        c = new Chapter8();
+                        break;
+                    case 9:
+                        c = new Chapter9();
+                        break;
+                    case 10:
+                        c = new Chapter10();
                         break;
                     default:
                         throw new Exception("Error: Chapter not found!");

@@ -42,7 +42,37 @@ namespace BookExamples
                 case 10:
                     Problem10();
                     break;
-                
+                case 11:
+                    Problem11();
+                    break;
+                case 12:
+                    Problem12();
+                    break;
+                case 13:
+                    Problem13();
+                    break;
+                case 14:
+                    Problem14();
+                    break;
+                case 15:
+                    Problem15();
+                    break;
+                case 16:
+                    Problem16();
+                    break;
+                case 17:
+                    Problem17();
+                    break;
+                case 18:
+                    Problem18();
+                    break;
+                case 19:
+                    Problem19();
+                    break;
+                case 20:
+                    Problem20();
+                    break;
+
             }
         }
 

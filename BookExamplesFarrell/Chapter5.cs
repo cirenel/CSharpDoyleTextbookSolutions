@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 
@@ -194,13 +195,67 @@ namespace BookExamples
         }
         public override void Problem13()
         {
+            //solution 1
+            Console.WriteLine("Give me a phrase ");
+            string input = Console.ReadLine();
+            int count = 0;
+            for(int n = 0; n < input.Length; n++)
+            {
+                if (input[n] == 'a' || input[n] == 'e' || input[n] == 'i' || input[n] == 'o' || input[n] == 'u' || input[n] == 'A' || input[n] == 'E' || input[n] == 'I' || input[n] == 'O' || input[n] == 'U')
+                {
+                    count++;
+                }
 
-            throw new NotImplementedException();
+            }
+            Console.WriteLine($"'{input}' has {count} vowels.");
+
+
+            //solution 2
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A','E','I','O','U' };
+            Console.WriteLine("Give me a phrase ");
+            input = Console.ReadLine();
+            count = 0;
+            for (int n = 0; n < input.Length; n++)
+            {
+                foreach(char v in vowels)
+                {
+                    if (input[n] == v)
+                    {
+                        count++;
+                        break;
+                    }
+                }
+            }
+            Console.WriteLine($"'{input}' has {count} vowels.");
+
+
         }
         public override void Problem14()
         {
 
-            throw new NotImplementedException();
+            Random rand = new Random();
+            int goal = rand.Next(1, 11);
+            int guess;
+            int numGuess = 0; 
+            do
+            {
+                Console.Write("Guess a number: ");
+                guess = int.Parse(Console.ReadLine());
+                numGuess++;
+                if (guess == goal)
+                {
+                    Console.WriteLine("You got it!!! ");
+                }
+                else if (guess < goal)
+                {
+                    Console.WriteLine("Your guess is too low.");
+                }
+                else if (guess > goal)
+                {
+                    Console.WriteLine("Your guess is too high.");
+                }
+                Console.WriteLine($"You have guessed {numGuess} times.");
+            } while (guess != goal);
         }
         public override void Problem15()
         {
