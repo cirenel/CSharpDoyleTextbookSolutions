@@ -161,30 +161,23 @@ namespace BookExamples
         }
 
         //Problem 6 begin 
-        //i dont know why this is in methods. 
         public override void Problem6()
         {
-            double meterToFt = 3.28084;
-            double meterToIn = 39.37008;
-
-            double meters = GetDouble("Please give me a number of meters : ");
-            double feet = meters * meterToFt;
-            double inches = meters * meterToIn;
-
-            int ftInt = (int) feet;
-            //OR 
-            //int f = feet as int;
-            int inInt = (int) ((feet - ftInt) * 12);
-            string intMeasure = $"{ ftInt }'{inInt}\"";
-            //build the output string using string interpolation, formatting, and spacing 
-            string output = $"  {meters:f2} m is :\n" +
-                            $"\t{feet,8:f2} ft\n" +
-                            $"\t{inches,8:f2} in\n" +
-                            $"\tOR\n" +
-                            $"\t{intMeasure,8}";
-            //print output to screen 
-            Console.WriteLine(output);
-
+            double meters = GetDouble("How many meters? ");
+            int numFeet = ConvertMtoF(meters); //method call
+            int numInch = ConvertMtoI(meters); //method call 
+            Console.WriteLine($"{meters} m is {numFeet} ft and {numInch} in\n");
+        }
+        static int ConvertMtoF(double m)
+        {
+            double ftFractional = m * 3.28084;
+            return Convert.ToInt32(ftFractional);
+        }
+        static int ConvertMtoI(double m)
+        {
+            double ftFrctionalLessWhole = (m * 3.28084) - ConvertMtoF(m);
+            double inchesFraction = 12 * ftFrctionalLessWhole;
+            return Convert.ToInt32(inchesFraction);
         }
 
         //Problem 7 begin 
@@ -285,7 +278,7 @@ namespace BookExamples
             Console.WriteLine(output);
         }
 
-        //Problem 9 begin 
+        //Problem 10 begin 
         public override void Problem10()
         {
             throw new NotImplementedException();

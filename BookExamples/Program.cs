@@ -13,7 +13,6 @@ namespace BookExamples
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
-
             
             do
             {

@@ -27,9 +27,6 @@ namespace BookExamples
 {
     class Chapter1 : Chapter
     {
-        
-
-
         public override void RunProblem(int num)
         {
             base.RunProblem(num);

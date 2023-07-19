@@ -22,7 +22,7 @@ using System.Threading.Tasks;
 //NOTE: i have traditionally NOT covered this chapter until AFTER the IT150  midterm exam
 //in this file, I have created the classes specifed by the prompt as SUBCLASSES of this Chapter4 class.
 //These subclasses could be easily peeled into their own stand alone .cs files
-
+//additional class files for these problems can be found in this solution file 
 
 //Chapter 4 is covered in IT150 [after midterms]
 
@@ -125,7 +125,35 @@ namespace BookExamples
         //begin Problem 3
         public override void Problem3()
         {
-            throw new NotImplementedException();
+            //create motorways with various constructor options 
+            Motorway m1, m2, m3, m4;
+            m1 = new Motorway(name:"Highway 42", direction: Direction.W, numLanes:4);
+            m2 = new Motorway(6, "Highway 61", Direction.N, "Airline Highway");
+            m3 = new Motorway(2, "Highway 44", Direction.S);
+            m4 = new Motorway(10, "I-10", Direction.W);
+
+            //connect intersecting motorways 
+            m1.AddIntersectingMotorway(m2);
+            m2.AddIntersectingMotorway(m1);
+            m1.AddIntersectingMotorway(m3);
+            m3.AddIntersectingMotorway(m1);
+            m3.AddIntersectingMotorway(m4);
+            m4.AddIntersectingMotorway(m3);
+            m1.AddIntersectingMotorway(m4);
+            m4.AddIntersectingMotorway(m1);
+
+            //print report of each highway 
+            Console.WriteLine("\n=================== Motorway Reports ====================");
+            Console.WriteLine(m1);
+            Console.WriteLine(m2);
+            Console.WriteLine(m3);
+            Console.WriteLine(m4);
+
+            Console.WriteLine("\n================== Intersection Reports =================");
+            Console.WriteLine(m1.GetReportofIntersections());
+            Console.WriteLine(m2.GetReportofIntersections());
+            Console.WriteLine(m3.GetReportofIntersections());
+            Console.WriteLine(m4.GetReportofIntersections());
 
 
         }
@@ -164,12 +192,71 @@ namespace BookExamples
 
         public override void Problem5()
         {
-            throw new NotImplementedException();
+            List<Receipt> all = new List<Receipt>();
+            bool multiple = false; 
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Enter the items you are adding to the bill. type EXIT when done");
+                Receipt r = new Receipt();
+
+                string input = "";
+                string description = "";
+                double price;
+                do
+                {
+                    Console.Write("\nItem name: ");
+                    description = Console.ReadLine();
+                    if (description == "EXIT") { continue; }
+                    do
+                    {
+                        Console.Write("Item price: ");
+                        input = Console.ReadLine();
+                    } while (!double.TryParse(input, out price) && input != "EXIT");
+
+                    if (input == "EXIT") { continue; }
+
+                    r.AddItem(new Item(description, price));
+
+                } while (input != "EXIT" && description != "EXIT");
+
+                Console.WriteLine("\n your receipt: ");
+                Console.WriteLine(r.GetReceipt());
+
+                Console.WriteLine($"You owe {r.Total}");
+
+                double amtpaid = GetDouble("How much are you paying for this? ");
+                r.Pay(amtpaid);
+                all.Add(r); //add this recipt to the list of ALL recipts 
+                Console.WriteLine("Thank you come again!! ");
+                Console.Write("Are there more? Y/N ---> ");
+                input = Console.ReadLine();
+                multiple = (input == "Yes") || (input == "Y") || (input == "yes") || (input == "y")  ;
+                Console.WriteLine();
+            } while (multiple);
+
+            all.Sort(); //sort --> will use the compareto method in the recipt class [bases this information on the total]
+
+            Console.WriteLine("\nHere are all of the recipts from this session: ");
+            foreach(Receipt r in all)
+            {
+                Console.WriteLine(r.GetReceipt()+"\n");
+            }
+
         }
 
         public override void Problem6()
         {
-            throw new NotImplementedException();
+            string dest = Console.ReadLine();
+            double distance = GetDouble("How many miles did you travel? ");
+            double gallons = GetDouble("How many gallons did you use? ");
+            double price = GetDouble("How much did you spend on gas?");
+            int num = GetInt("How many people are splitting the bill? ");
+
+            Trip t = new Trip(gallons, price, distance, dest, num);
+            Console.WriteLine(t);
+
         }
 
         public override void Problem7()

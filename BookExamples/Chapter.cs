@@ -8,8 +8,11 @@ namespace BookExamples
 {
     abstract class Chapter
     {
+        public static int problemCount = 0; 
+
         public virtual void RunProblem(int num)
         {
+            problemCount++;
             switch (num)
             {
                 case 1:
@@ -44,6 +47,7 @@ namespace BookExamples
                     break;
                 
             }
+            Console.WriteLine($"{problemCount} problems run. ");
         }
 
         public abstract void Problem1();
