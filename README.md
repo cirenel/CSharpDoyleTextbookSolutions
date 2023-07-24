@@ -1,5 +1,5 @@
 # C# Doyle Textbook Solutions
-textbook solutions for C# Programming: From Problem Analysis to Program Design - 5th ed by Barbara Doyle  
+textbook solutions for C# Programming: From Problem Analysis to Program Design - 5th ed by Barbara Doyle and Microsoft Visual C# 2017: An Introduction to Object-Oriented Programming - 7th ed by Joyce Farrell 
 intended for use with IT150, IT151, and IT152
 produced for ITI - Summer 2023
 
