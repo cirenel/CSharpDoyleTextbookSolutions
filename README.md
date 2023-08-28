@@ -13,3 +13,4 @@ What is here?
 
 Bear in mind, the solutions presented here are each only one possible solution to the stated problems in the text. Additionally, with the problems themselves, there are often vaugities or multiple possible interpretations. Use your discretion. 
 
+[ https://github.com/cirenel/CSharpDoyleTextbookSolutions ]
