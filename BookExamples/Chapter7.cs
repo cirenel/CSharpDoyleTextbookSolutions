@@ -19,7 +19,7 @@ namespace BookExamples
     //  - array access
     //  - array indexing 
     //  - the introduction of the foreach loop 
-    //  -
+    //  - what is an array 
     // not in text but reccomended: 
     //  - 
     

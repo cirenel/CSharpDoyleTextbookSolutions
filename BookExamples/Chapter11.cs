@@ -77,7 +77,7 @@ namespace BookExamples
         public override void Problem9()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch10Pro9());
         }
 

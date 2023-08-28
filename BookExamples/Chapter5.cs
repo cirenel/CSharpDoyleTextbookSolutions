@@ -19,6 +19,7 @@ namespace BookExamples
     //  - booleans
     //  - if - else if - else
     //  - switch statements 
+    //  - comparison operators 
     //  - logical operators 
     //  - variable scope 
     // not in text but reccomended: 

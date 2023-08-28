@@ -47,108 +47,108 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(183, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 35);
+            this.label1.Size = new System.Drawing.Size(91, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "miles";
             // 
             // milesTxt
             // 
-            this.milesTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.milesTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.milesTxt.Location = new System.Drawing.Point(276, 39);
             this.milesTxt.Name = "milesTxt";
-            this.milesTxt.Size = new System.Drawing.Size(283, 42);
+            this.milesTxt.Size = new System.Drawing.Size(283, 44);
             this.milesTxt.TabIndex = 1;
             // 
             // mpgTxt
             // 
-            this.mpgTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.mpgTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.mpgTxt.Location = new System.Drawing.Point(276, 99);
             this.mpgTxt.Name = "mpgTxt";
-            this.mpgTxt.Size = new System.Drawing.Size(283, 42);
+            this.mpgTxt.Size = new System.Drawing.Size(283, 44);
             this.mpgTxt.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(194, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 35);
+            this.label2.Size = new System.Drawing.Size(80, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "mpg";
             // 
             // totalGalTxt
             // 
-            this.totalGalTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.totalGalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.totalGalTxt.Location = new System.Drawing.Point(276, 163);
             this.totalGalTxt.Name = "totalGalTxt";
-            this.totalGalTxt.Size = new System.Drawing.Size(283, 42);
+            this.totalGalTxt.Size = new System.Drawing.Size(283, 44);
             this.totalGalTxt.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(97, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 35);
+            this.label3.Size = new System.Drawing.Size(189, 37);
             this.label3.TabIndex = 4;
             this.label3.Text = "gallons total";
             // 
             // numPeopleTxt
             // 
-            this.numPeopleTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.numPeopleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.numPeopleTxt.Location = new System.Drawing.Point(276, 223);
             this.numPeopleTxt.Name = "numPeopleTxt";
-            this.numPeopleTxt.Size = new System.Drawing.Size(283, 42);
+            this.numPeopleTxt.Size = new System.Drawing.Size(283, 44);
             this.numPeopleTxt.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(100, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 35);
+            this.label4.Size = new System.Drawing.Size(184, 37);
             this.label4.TabIndex = 6;
             this.label4.Text = "num people";
             // 
             // totalCostTxt
             // 
-            this.totalCostTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.totalCostTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.totalCostTxt.Location = new System.Drawing.Point(276, 285);
             this.totalCostTxt.Name = "totalCostTxt";
-            this.totalCostTxt.Size = new System.Drawing.Size(283, 42);
+            this.totalCostTxt.Size = new System.Drawing.Size(283, 44);
             this.totalCostTxt.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(133, 292);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 35);
+            this.label5.Size = new System.Drawing.Size(146, 37);
             this.label5.TabIndex = 8;
             this.label5.Text = "total cost";
             // 
             // costPerTxt
             // 
-            this.costPerTxt.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.costPerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.costPerTxt.Location = new System.Drawing.Point(276, 350);
             this.costPerTxt.Name = "costPerTxt";
-            this.costPerTxt.Size = new System.Drawing.Size(283, 42);
+            this.costPerTxt.Size = new System.Drawing.Size(283, 44);
             this.costPerTxt.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("EuroRoman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(54, 353);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 35);
+            this.label6.Size = new System.Drawing.Size(238, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "cost per person";
             // 

@@ -17,7 +17,11 @@ namespace BookExamples
     // Topics of focus:
     //  - multi dimensional array creation, access, use 
     //  - collections : 
-    //          - 
+    //          - list
+    //          - array list
+    //          - bit array
+    //          - dictionary 
+    //          -  set
     // not in text but reccomended: 
     //  - 
 

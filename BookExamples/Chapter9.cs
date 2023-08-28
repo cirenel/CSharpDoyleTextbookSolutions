@@ -24,7 +24,7 @@ namespace BookExamples
 
     //see Ch9Pro1, Ch9Pro2, Ch9Pro3, Ch9Pro4, Ch9Pro5, Ch9Pro6, Ch9Pro8, Ch9Pro10 files for additional comments 
 
-    //Chapter 9 is covered in IT151, and IT152
+    //Chapter 9 is covered in IT151, and IT152 though the very very start of it can be covered in IT150 a examples of classes nd methods 
 
     class Chapter9 : Chapter
     {
@@ -37,42 +37,42 @@ namespace BookExamples
         public override void Problem1()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+           // 
             Application.Run(new Ch9Pro1()); //this is the secret sauce for kicking off a form from within code 
         }
 
         public override void Problem2()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+           // 
             Application.Run(new Ch9Pro2());
         }
 
         public override void Problem3()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+           // 
             Application.Run(new Ch9Pro3());
         }
 
         public override void Problem4()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch9Pro4());
         }
 
         public override void Problem5()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch9Pro5());
         }
 
         public override void Problem6()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch9Pro6());
         }
 
@@ -85,7 +85,7 @@ namespace BookExamples
         {
             
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch9Pro8());
         }
 
@@ -98,7 +98,7 @@ namespace BookExamples
         public override void Problem10()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch9Pro10());
         }
 

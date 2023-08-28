@@ -100,14 +100,14 @@ namespace BookExamples
         public override void Problem4()
         {
             //printing the required shape by creating a single string 
-            string output = $" CCCCCCCCC             ##      ##\n" +
-                            $" CCCCCCCCC             ##      ##\n" +
-                            $" CC                 ################\n" +
-                            $" CC                    ##      ##\n" +
-                            $" CC                    ##      ##\n" +
-                            $" CC                 ################\n" +
-                            $" CCCCCCCCC             ##      ##\n" +
-                            $" CCCCCCCCC             ##      ##\n" ;
+            string output = $" CCCCCCCCC                  ##      ##     \n" +
+                            $" CCCCCCCCC                 ##      ##      \n" +
+                            $" CC                    ################    \n" +
+                            $" CC                       ##      ##       \n" +
+                            $" CC                      ##      ##        \n" +
+                            $" CC                  ################      \n" +
+                            $" CCCCCCCCC             ##      ##          \n" +
+                            $" CCCCCCCCC            ##      ##           \n" ;
             //then printing out the string in a single writeline 
             Console.WriteLine(output);
         }

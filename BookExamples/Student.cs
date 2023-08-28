@@ -90,13 +90,13 @@ namespace BookExamples
         //misc instance methods 
         public bool CanGrad()
         {
-            if (term >= 8 && gpa >= 1.25)
+            if (term >= 8 && gpa >= 1.25) //check that the term and gpa are high enough 
             {
-                return true;
+                return true; //if so return true, the student can graduate 
             }
-            else
+            else //otherwise 
             {
-                return false;
+                return false; //return false, the student cannot graduate 
             }
         }
 

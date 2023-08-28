@@ -40,7 +40,7 @@ namespace BookExamples
         public override void Problem2()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch10Pro2());
         }
 
@@ -81,7 +81,7 @@ namespace BookExamples
         public override void Problem9()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Ch10Pro9());
         }
 

@@ -179,12 +179,120 @@ namespace BookExamples
 
         public override void Problem5()
         {
-            throw new NotImplementedException();
+            double subtotal = 0;
+            const double salesTaxRate = 0.075;
+            int count = 0;
+            string input;
+            double itemPrice; 
+            Console.Write("Enter the price of each item then enter. When done entering items, type EXIT");
+            do
+            {
+                Console.Write($"What is the price of item{count + 1}: ");
+                input = Console.ReadLine();
+                if (double.TryParse(input, out itemPrice) && itemPrice > 0)
+                {
+                    subtotal += itemPrice;
+                    count++;
+                }
+
+            }while(input!="EXIT");
+
+            double tax = subtotal * salesTaxRate;
+            double shipping = 0;
+            if(count < 3)
+            {
+                shipping = 3.5;
+            } else if (count <=6)
+            {
+                shipping = 5;
+            } else if (count <= 10)
+            {
+                shipping = 7;
+            } else if (count <= 15)
+            {
+                shipping = 15;
+            } else
+            {
+                shipping = 10;
+            }
+
+            double total = subtotal + tax + shipping;
+            string output = $"{count} items\n" +
+                            $"{"Subtotal", 10} ....................{subtotal,8:c2}\n" +
+                            $"{"Tax",10} ....................{tax,8:c2}\n" +
+                            $"{"Shipping",10} ....................{shipping,8:c2}\n" +
+                            $"{"Total",10} ....................{total,8:c2}\n";
+            Console.WriteLine(output);
+
         }
 
         public override void Problem6()
         {
-            throw new NotImplementedException();
+            
+
+            string input;
+            char[] hexChars = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+            bool isLegal = false; 
+            do
+            {
+                Console.WriteLine("Input a numeric sequence to see it's equivilent base 16, base 10, base 2, and base 8 representations. ");
+                input = Console.ReadLine();
+                foreach(char c in input)
+                {
+                    if (!hexChars.Contains(c)) { isLegal = false; break; }
+                    else { isLegal = true; }
+                }
+            } while (!isLegal);
+
+            int decimalNum = 0; 
+            for ( int i = 0; i < input.Length; i++)
+            {
+                int cur = (int)input[input.Length - 1 - i];
+                int multiplier = ((48<=cur && cur<=57 )? cur - 48 : cur - 55);
+
+                decimalNum += (int)(multiplier * Math.Pow(16,i));
+
+            }
+
+            string binNum = "";
+            int conToBi = decimalNum;
+            int j = 0;
+            do
+            {
+                j++;
+            } while ((int)Math.Pow(2,j) <= conToBi);
+
+            for (; j >= 0; j-- )
+            {
+                int place = (int)Math.Pow(2,j);
+                Console.WriteLine(place);
+                if(conToBi >= place)
+                {
+                    binNum += "1";
+                    conToBi-= place;
+                } else
+                {
+                    binNum += "0";
+                    
+                }
+            }
+
+            int conToOct = decimalNum;
+            string octNum = "";
+            int k = 0;
+            do
+            {
+                k++;
+            } while ((int)Math.Pow(8,k) <= conToOct);
+
+            for (; k >= 0; k--)
+            {
+                int place = (int)Math.Pow(8,k);
+                
+            }
+
+            Console.WriteLine($"0x{input} is:\n\t {decimalNum} b10\n\t {binNum} b2\n\t{octNum} b8");
+
         }
 
         public override void Problem7()

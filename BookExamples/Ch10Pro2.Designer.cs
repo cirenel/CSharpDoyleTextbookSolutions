@@ -139,6 +139,7 @@ namespace BookExamples
             this.Controls.Add(this.label1);
             this.Name = "Ch10Pro2";
             this.Text = "Ch10Pro2";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

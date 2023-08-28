@@ -19,7 +19,10 @@ using System.Threading.Tasks;
 //  - importance of strings
 //  - beginning of string formatting 
 // not in text but reccomended: 
-//  - string interpolation 
+//  - string interpolation and formattign
+//      https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
+//      and
+//      https://www.w3schools.com/cs/cs_strings_interpol.php
 
 //Chapter 2 is covered in IT150
 
@@ -67,8 +70,7 @@ namespace BookExamples
 
         public override void Problem3()
         {
-            //decleration of 5 independant variables to store exam grades in 
-            
+            //decleration of 5 independant variables to store exam grades in             
             float exam1 = 100f;
             float exam2 = 92.6f;
             float exam3 = 85.3f;
@@ -146,14 +148,14 @@ namespace BookExamples
         public override void Problem6()
         {
             //USING DECIMAL DOES ODD THINGS WITH THIS VERSION OF .NET
-            string employeeName = "Joshua Mountain"; //entering cmployee name
-            double salesComissionRate = 0.07; //creation of sales comission rate % variable 
-            double socialSecurityRate = 0.06; //creation of social sec rate % variable 
-            double taxRate = 0.18; //creation of tax rate % variable 
-            double retirementRate = 0.1; //creation of retirement rate % variable 
+            string employeeName = "Joshua Mountain"; //entering and assignment of employee name
+            double salesComissionRate = 0.07; //creation and assignment of sales comission rate % variable 
+            double socialSecurityRate = 0.06; //creation and assignment of social sec rate % variable 
+            double taxRate = 0.18; //creation and assignment of tax rate % variable 
+            double retirementRate = 0.1; //creation and assignment of retirement rate % variable 
 
-            double monthlySale = 161432; //creation of total monthly sales  variable 
-            double comission = monthlySale * salesComissionRate; //computation of Josh's comission 
+            double monthlySale = 161432; //creation and assignment of total monthly sales  variable 
+            double comission = monthlySale * salesComissionRate; //creation and computation of Josh's comission 
             double withholding = (socialSecurityRate + taxRate + retirementRate) * comission; //computation of witholding 
             double takehome = comission - withholding; //computation of takehome pay 
 
@@ -207,11 +209,11 @@ namespace BookExamples
             //creation of the output string using interpolation, spacing, and formatting 
             string output = $">>>>>>>>>>>> FINAL GRADE CALCULATION <<<<<<<<<<<<\n" +
                             $"\t   {"Category",10} : {"Grade",6} @ {"Weight",6} : {"Included"}\n" + 
-                            $"\t   {"Homework", 10} : {homeworkGrade,6} @ {hwWeight,6:p0} : {(homeworkGrade * hwWeight):f2}\n" +
-                            $"\t + {"Projects", 10} : {projectGrade,6} @ {proWeight,6:p0} : {(projectGrade * proWeight):f2}\n" +
-                            $"\t + {"Quizzes", 10} : {quizGrade,6} @ {quizWeight,6:p0} : {(quizGrade * quizWeight):f2}\n" +
-                            $"\t + {"Exams",10} : {examGrade,6} @ {examWeight,6:p0} : {(examGrade * examWeight):f2}\n" +
-                            $"\t + {"Final Exam",10} : {finalExamGrade,6} @ {finalWeight,6:p0} : {(finalExamGrade * finalWeight):f2}\n" +
+                            $"\t   {"Homework", 10} : {homeworkGrade,6} @ {hwWeight,6:p0} : {(homeworkGrade * hwWeight),4:f2}\n" +
+                            $"\t + {"Projects", 10} : {projectGrade,6} @ {proWeight,6:p0} : {(projectGrade * proWeight),4:f2}\n" +
+                            $"\t + {"Quizzes", 10} : {quizGrade,6} @ {quizWeight,6:p0} : {(quizGrade * quizWeight),4:f2}\n" +
+                            $"\t + {"Exams",10} : {examGrade,6} @ {examWeight,6:p0} : {(examGrade * examWeight),4:f2}\n" +
+                            $"\t + {"Final Exam",10} : {finalExamGrade,6} @ {finalWeight,6:p0} : {(finalExamGrade * finalWeight),4:f2}\n" +
                             $"FINAL GRADE . . . . . . . . . . . . . . . {weightedAvg:f2} \n";
             //printing string on the console 
             Console.WriteLine(output);

@@ -16,7 +16,10 @@ using System.Threading.Tasks;
 //  - creation of objects
 //  - specificaiton of classes
 //  - instance methods v. static methods
-//  - 
+//  - constructors
+//  - accessors
+//  - mutators
+//  - override methods
 // not in text but reccomended: 
 //  - 
 //NOTE: i have traditionally NOT covered this chapter until AFTER the IT150  midterm exam
@@ -261,13 +264,12 @@ namespace BookExamples
 
         public override void Problem7()
         {
-            throw new NotImplementedException();
-
+            throw new NotImplementedException(); //this one is just... idk i dont like it 
         }
 
         public override void Problem8()
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void Problem9()

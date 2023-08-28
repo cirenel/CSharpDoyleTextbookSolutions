@@ -10,7 +10,7 @@ namespace BookExamples
     {
         //attributes
         private DateTime orderTime;
-        private Dictionary<Item, int> items;
+        private Dictionary<Item, int> items; //the item subclass is defined below
         private double total, subtotal;
         private const double saleTaxRate = 0.095;
         private double amountTended;
@@ -38,6 +38,7 @@ namespace BookExamples
             recNum = lastRecNum++;
         }
 
+        //methods
         public void AddItem(Item i)
         {
             subtotal+=i.price;
@@ -71,54 +72,66 @@ namespace BookExamples
 
         public string GetReceipt()
         { 
-            if(total == 0) CalcTotal();
+
+            if(total == 0) CalcTotal(); //calcuate the total if it has not been calculated 
+            
+            //begin building the recipt with a header and the number 
             string ret = " =========================================== \n" +
                          "|                                           |\n" +
-                         $"|             | RECEIPT {recNum,3} |               |\n" +
+                        $"|             | RECEIPT {recNum,3} |               |\n" +
                          "|                                           |\n" +
-                         " =========================================== \n" ;
+                         " =========================================== \n" ; 
+
+            //append the date 
             ret += $" {$"{orderTime.Date.Month}/{orderTime.Date.Day}/{orderTime.Date.Year}",-10}\n";
+            //foreach item in the items dictionary: 
             foreach (Item i in items.Keys)
             {
-                for (int j = 0; j < items[i]; j++)
+                for (int j = 0; j < items[i]; j++) //grab
                 {
                     ret += $"{i.description,15} ...................... {i.price,6:c2}\n";
                 }
             }
+            //append the subtotal, tax, and total to the end of the recipt 
             ret +=  "---------------------------------------------\n";
             ret += $" Subtotal ........................... {subtotal,8:c2}\n";
             ret += $" Tax      ........................... {saleTaxRate * subtotal,8:c2}\n";
             ret += $" Total    ........................... {total,8:c2}\n";
             ret += "\n=============================================\n";
 
-            if (paid)
+            if (paid) //if the user has paid this recipt
             {
+                //append the payment amount and change
                 ret += $"Paid       .......................... {amountTended,8:c2}\n";
                 ret += $"Change Due .......................... {amountTended-total,8:c2}\n";
             } else if(amountTended > 0)
             {
+                //if the amount that has been tended is more than 0, append how much is still owed 
                 ret += $"Paid ................................ {amountTended,8:c2}\n";
                 ret += $"Due  .............................. {total-amountTended,8:c2}\n";
                 ret +=  "  ADDITIONAL PAYMENT IS DUE. PLEASE PAY NOW.\n";
             }
             else
             {
+                //append a message to pay now
                 ret += "        PAYMENT IS DUE. PLEASE PAY NOW.\n";
 
             }
+            //append a footer 
             ret += "=============================================\n";
 
-            return ret;
+            return ret; //return the string representing the recipt 
         }
 
         public int CompareTo(Receipt other)
         {
-            return total.CompareTo(other.total);
+            return total.CompareTo(other.total); //recipts are compared and ordered by their total 
         }
     }
 
     class Item
     {
+        //each recipt item is made up of the decription and price 
         public string description;
         public double price; 
 
