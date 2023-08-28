@@ -40,9 +40,11 @@ namespace BookExamples
         }
 
         //begin Problem 1
-        //creating instances of the date class 
+       
         public override void Problem1()
-        {
+        { 
+            //reading in numbers
+            //then creating instances of the date class 
             int month = GetInt("Please enter the month: ", 1, 12);
             int year = GetInt("Please enter the year: ");
             int day = GetInt("Please enter the day: ", 1, 31);
@@ -167,7 +169,7 @@ namespace BookExamples
         public override void Problem4()
         {
             Employee e1, e2, e3, e4, e5, e6, e7, e8, e9, e10;
-            // public Employee(string f, string l, Department d, Classification c, double pr)
+            // new Employee(string f, string l, Department d, Classification c, double pr)
             e1 = new Employee("Susan", "Smith", Employee.Department.HR, Employee.Classification.hourly, 25.60);
             e2 = new Employee("Janice", "Field", Employee.Department.Marketing, Employee.Classification.salary, 52000);
             e3 = new Employee("Frank", "Herbet", Employee.Department.RandD, Employee.Classification.salary, 100000);

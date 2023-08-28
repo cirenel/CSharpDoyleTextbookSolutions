@@ -278,13 +278,99 @@ namespace BookExamples
         }
         public override void Problem16()
         {
-
-            throw new NotImplementedException();
+            Console.Write("Give me a numeric month: ");
+            int month = int.Parse(Console.ReadLine());
+            string monthName;
+            switch (month)
+            {
+                case 1:
+                    monthName = "JANUARY";
+                    break;
+                case 2:
+                    monthName = "FEBERARY";
+                    break;
+                case 3:
+                    monthName = "MARCH";
+                    break;
+                case 4:
+                    monthName = "APRIL";
+                    break;
+                case 5:
+                    monthName = "MAY";
+                    break;
+                case 6:
+                    monthName = "JUNE";
+                    break;
+                case 7:
+                    monthName = "JULY";
+                    break;
+                case 8:
+                    monthName = "AUGUST";
+                    break;
+                case 9:
+                    monthName = "SEPTEMBER";
+                    break;
+                case 10:
+                    monthName = "OCTOBER";
+                    break;
+                case 11:
+                    monthName = "NOVEMBER";
+                    break;
+                case 12:
+                    monthName = "DECEMBER";
+                    break;
+                default:
+                    monthName = "INVALID";
+                    break;
+            }
+            Console.WriteLine($"{month} is {monthName}");
         }
         public override void Problem17()
         {
 
-            throw new NotImplementedException();
+            Console.Write("Give me a planet position: ");
+            int position = int.Parse(Console.ReadLine());
+            string planet;
+            if( position == 1)
+            {
+                planet = "MERCUERY";
+            } else if (position == 2)
+            {
+                planet = "VENUS";
+            }
+            else if (position == 3)
+            {
+                planet = "EARTH";
+            }
+            else if (position == 4)
+            {
+                planet = "MARS";
+            }
+            else if (position == 5)
+            {
+                planet = "JUPITER";
+            }
+            else if (position == 6)
+            {
+                planet = "SATURN";
+            }
+            else if (position == 7)
+            {
+                planet = "URANUS";
+            }
+            else if (position == 8)
+            {
+                planet = "NEPTUNE";
+            }
+            else if (position == 9)
+            {
+                planet = "[not] PLUTO";
+            }
+            else
+            {
+                planet = "INVALID";
+            }
+            Console.WriteLine($"{planet} is in position {position}");
         }
         public override void Problem18()
         {

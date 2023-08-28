@@ -41,7 +41,7 @@ namespace BookExamples
             float tempF = (tempC * (9.0f/5.0f))+32;
             //COMMON ERRORS TO NOTE
             //(tempC * (9/5))+32; --> THIS WILL RESULT IN THE WRONG VALUE as 9/5 is an integer division 
-            //tempC * 9.0f/5.0f + 32; --> THIS WILL RESULT IN THE WRONG VALUE as order of opreations works left to right
+            //tempC * 9.0f/5.0f + 32; --> THIS WILL RESULT IN THE WRONG VALUE as order of opreations works left to right and the division will happen before the addition
 
             Console.WriteLine($"{tempC}°C --> {tempF:f1}°F\n");
 
@@ -85,12 +85,12 @@ namespace BookExamples
             //float avg = exam1 + exam2 + exam3 + exam4 + exam5 / 5; --> order of operations will do the division FIRST 
 
             //creation of string output using string interpolation with spacing and formatting options
-            string output = $"exam1: {exam1,6:f2}\n"+
+            string output = $"exam1: {exam1,6:f2}\n" +
                             $"exam2: {exam2,6:f2}\n" +
-                            $"exam3: {exam3,6:f2}\n"+
+                            $"exam3: {exam3,6:f2}\n" +
                             $"exam4: {exam4,6:f2}\n" +
                             $"exam5: {exam5,6:f2}\n" +
-                            $"avger: {avg,6:f2}\n";
+                            $"avger: {avg  ,6:f2}\n";
             //printing the output string to the console 
             Console.WriteLine(output);
 
