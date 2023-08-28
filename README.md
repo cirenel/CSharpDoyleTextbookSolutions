@@ -9,7 +9,8 @@ What is here?
 - There are a series of project-wide support methods to help with some basic utilities [such as requesting input from the user and parsing this input into numeric types] that are included in the Chapter.cs file
 - Comments have been provided throughout the code detailing steps within the individual problem solutions, overall contents to highlight for each chapter, additional resources/notes, as well as common pitfalls or important points being highlighted by each problem.
 - Running the program will prompt you for a chapter and problem to run. You should be able to observe the possible solution being run in the console or as a windows form depending on the context.
-- Unimplemented problems will display such via the Console. 
+- Unimplemented problems will display such via the Console.
+- Additionally, a partially complete solution file for Farrell's solutions has been started here and is in process. 
 
 Bear in mind, the solutions presented here are each only one possible solution to the stated problems in the text. Additionally, with the problems themselves, there are often vaugities or multiple possible interpretations. Use your discretion. 
 
